@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gcal-bridge — Privacy Policy</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; padding: 3rem 1.5rem; background: #16161a; color: #e6e6ea;
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  .sub { color: #a0a0ab; margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; color: #c9c9d4; }
+  ul { padding-left: 1.2rem; }
+  code { background: #26262c; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+  a { color: #8fb8ff; }
+  footer { margin-top: 3rem; color: #77777f; font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">gcal-bridge &middot; last updated 18 October 2026</p>
+
+  <h2>Summary</h2>
+  <p>gcal-bridge runs entirely on the owner's own computer. It sends no data to the
+     developer or to any third party. The only external service it talks to is Google's
+     APIs, using the owner's own authorization.</p>
+
+  <h2>What data is accessed</h2>
+  <ul>
+    <li><strong>Google Calendar</strong> — event titles, times, locations, and links, for the calendars the owner selects.</li>
+    <li><strong>Google Tasks</strong> — task titles, due dates, notes, and completion status.</li>
+  </ul>
+
+  <h2>How data is stored</h2>
+  <ul>
+    <li>The OAuth <code>client_secret.json</code> and the resulting refresh/access token are stored
+        locally at <code>~/.config/gcal-bridge/</code> with file mode <code>0600</code>, readable only by the owner's user account.</li>
+    <li>Calendar and task data is held in memory only for as long as it takes to draw the desktop widget.
+        There is no database, no log of event or task contents, and no cache of personal data on disk.</li>
+  </ul>
+
+  <h2>What is never done</h2>
+  <ul>
+    <li>No data is transmitted to the developer, to advertisers, or to any analytics service.</li>
+    <li>No data is sold, shared, or used for advertising or profiling.</li>
+    <li>No data is used to train machine-learning models.</li>
+    <li>Nothing is collected from anyone other than the owner of the authorizing account.</li>
+  </ul>
+
+  <h2>Retention and deletion</h2>
+  <p>Because the only stored item is a local OAuth token, deletion is immediate and
+     entirely under the owner's control:</p>
+  <ul>
+    <li>Delete <code>~/.config/gcal-bridge/token.json</code> to remove the stored token, or run <code>gcb auth</code> again to replace it.</li>
+    <li>Revoke the app's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>gcal-bridge's use and transfer of information received from Google APIs adheres to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+     including the Limited Use requirements. Data is used solely to display the owner's own
+     calendar and tasks on the owner's own device, and for nothing else.</p>
+
+  <h2>Children</h2>
+  <p>The tool is a personal utility and is not directed at children.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:bhatt3999@gmail.com">bhatt3999@gmail.com</a></p>
+
+  <footer>Personal project. Not affiliated with Google.</footer>
+</main>
+</body>
+</html>

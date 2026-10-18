@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gcal-bridge</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; padding: 3rem 1.5rem; background: #16161a; color: #e6e6ea;
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  .sub { color: #a0a0ab; margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; color: #c9c9d4; }
+  ul { padding-left: 1.2rem; }
+  code { background: #26262c; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+  a { color: #8fb8ff; }
+  footer { margin-top: 3rem; color: #77777f; font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>gcal-bridge</h1>
+  <p class="sub">A personal bridge between a Linux desktop and Google Calendar &amp; Tasks.</p>
+
+  <h2>What it is</h2>
+  <p>gcal-bridge is a small, self-hosted command-line tool plus a desktop-shell widget.
+     It runs on the owner's own computer, reads the owner's own Google Calendar and
+     Google Tasks, and displays them in the owner's own desktop bar. It also lets the
+     owner add and complete tasks and create calendar events from the desktop.</p>
+
+  <h2>Who uses it</h2>
+  <p>One person: the owner of the Google account that authorizes it. It is not offered
+     as a service to the public, has no sign-up, no user accounts, and no multi-user
+     support. There is no server component and no third-party hosting.</p>
+
+  <h2>How it is used</h2>
+  <ul>
+    <li>The tool requests access to <em>Google Calendar</em> and <em>Google Tasks</em> for the authorizing account.</li>
+    <li>It calls the Google Calendar API and Google Tasks API directly, from the owner's machine.</li>
+    <li>Nothing is sent anywhere else: there is no analytics, no telemetry, and no remote backend.</li>
+  </ul>
+
+  <h2>Source &amp; contact</h2>
+  <p>Questions or removal requests: <a href="mailto:bhatt3999@gmail.com">bhatt3999@gmail.com</a>.</p>
+
+  <footer>Personal project. Not affiliated with Google.</footer>
+</main>
+</body>
+</html>
